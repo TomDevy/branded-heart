@@ -1,7 +1,7 @@
-import About from "@/components/home/About";
-import Hero from "@/components/home/Hero";
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Hero from "@/components/home/Hero";
+import About from "@/components/home/About";
 
 export default function Home() {
   return (
