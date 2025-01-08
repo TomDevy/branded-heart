@@ -23,7 +23,7 @@ const Header = () => {
         <Image
           className="cursor-pointer w-36 md:w-auto"
           src={logo}
-          alt="vesspor"
+          alt="branded heart"
         />
       </Link>
         <nav className="hidden lg:flex items-center justify-center gap-10">
