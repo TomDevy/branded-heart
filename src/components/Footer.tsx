@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="p-5 lg:p-20 bg-[#F8F8F8] rounded-xl md:rounded-3xl">
         <div className="py-5 border-b flex flex-col lg:flex-row lg:items-end items-start justify-between">
           <h1 className="font-bold lg:w-2/4 lg:leading-[60px] text-2xl lg:text-5xl text-primary">
-            This is the home of Branding!!!
+            This is the home of Branding!
           </h1>
           <div className="mt-5 lg:w-2/5 flex gap-3 lg:gap-10 flex-col lg:flex-row items-center">
             {socialLinks.map(({ label, link }) => (
@@ -38,7 +38,6 @@ const Footer = () => {
               src={logo}
               alt="branded heart"
             />
-            <Image className="mx-auto md:mx-0" src={logo} alt="logo" />
           </div>
           {/* <div>
             <h3 className="text-primary font-bold text-lg mb-5">Invest</h3>

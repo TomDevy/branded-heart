@@ -95,7 +95,7 @@
   background-repeat: no-repeat;
 } */
 
-.hero-benefit {
+/* .hero-benefit {
   background-image: url("../assets/images/Union.png");
   background-size: auto;
   background-position: center;
@@ -106,7 +106,7 @@
   background-image: url("../assets/images/pexels.png");
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 .coin {
   animation: slideDown 6s infinite;

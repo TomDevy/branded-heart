@@ -22,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
         <body className={`${sora.className} mx-auto max-w-[1440px]`}>
+          {children}
         </body>
     </html>
   );
