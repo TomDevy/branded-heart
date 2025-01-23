@@ -142,7 +142,7 @@
   display: flex;
   height: 100%;
   width: 100%;
-  overflow-x: hidden; /* Hidden by default */
+  overflow-x: hidden;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -196,16 +196,16 @@
 
 
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .no-scrollbar::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari, and Opera */
+  display: none;
 }
 
 .shadow-bottom {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 50;
 }
 
@@ -215,6 +215,9 @@
   background-color: rgb(160, 236, 160);
   border-radius: 50%;
   animation: blink 1s infinite;
+}
+.offers {
+
 }
 
 @keyframes blink {
