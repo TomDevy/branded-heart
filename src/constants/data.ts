@@ -1,6 +1,7 @@
 import {
     ABOUT,
     HOME,
+    CONTACT
   } from "./path";
   
   export const links = [
@@ -11,6 +12,10 @@ import {
     {
       route: ABOUT,
       label: "About",
+    },
+    {
+      route: CONTACT,
+      label: "Contact",
     },
 
   ]

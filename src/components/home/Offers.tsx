@@ -1,6 +1,6 @@
 const Offers = () => {
     return(
-        <div className="">Offers</div>
+        <div className="offers">Offers</div>
     );
 };
 export default Offers

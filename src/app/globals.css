@@ -217,7 +217,7 @@
   animation: blink 1s infinite;
 }
 .offers {
-
+  padding: 30px;
 }
 
 @keyframes blink {
