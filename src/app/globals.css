@@ -218,7 +218,50 @@
 }
 .offers {
   padding: 30px;
+  background-color: #f9f9f9; /* Optional background for the offers section */
 }
+
+.offerCardCon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px; /* Adds spacing between cards */
+}
+
+.offerCardEach {
+  padding: 20px;
+  background-color: #ffebeb;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.offerCardInner {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better aesthetics */
+  width: 100%;
+  height: 100%;
+}
+
+.offerCardInner h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.offerCardInner p {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
 
 @keyframes blink {
   0%, 100% {
