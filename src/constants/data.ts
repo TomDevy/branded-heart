@@ -22,7 +22,7 @@ import {
   
   export const socialLinks = [
     {
-      link: "https://www.instagram.com/official_vesspor?igsh=MWZib3V5ZGYzaXBidg==",
+      link: "https://www.instagram.com/bh_creation/",
       icon: "",
       label: "Instagram",
     },
@@ -32,7 +32,7 @@ import {
     //   label: "LinkedIn",
     // },
     {
-      link: "https://twitter.com/officialvesspor",
+      link: "",
       icon: "",
       label: "X",
     },
