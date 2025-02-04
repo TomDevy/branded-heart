@@ -31,6 +31,7 @@ const Offers = () => {
     direction="left"
     >
     <div className="offers">
+        <h1>Why Choose Us?</h1>
       <div className="offerCardCon">
         {offersData.map((offer, index) => (
           <div className="offerCardEach" key={index}>
