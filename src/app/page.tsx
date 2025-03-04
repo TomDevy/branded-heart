@@ -7,11 +7,9 @@ import Offers from "@/components/home/Offers";
 export default function Home() {
   return (
     <div className="app">
-      <Header />
       <Hero />
       <Offers />
       <About />
-      <Footer />
     </div>
   );
 }
