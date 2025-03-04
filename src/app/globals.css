@@ -2,307 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: #232555;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: #919191;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-      scroll-behavior: smooth;
-    }
-
-    .app {
-      overflow: hidden;
-    }
-
-    .accordion-close {
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-    }
-
-    .accordion-show {
-      height: 100%;
-      overflow: 9999px;
-      transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-    }
-
-    .dark {
-      --background: 222.2 84% 4.9%;
-      --foreground: 210 40% 98%;
-
-      --card: 222.2 84% 4.9%;
-      --card-foreground: 210 40% 98%;
-
-      --popover: 222.2 84% 4.9%;
-      --popover-foreground: 210 40% 98%;
-
-      --primary: 210 40% 98%;
-      --primary-foreground: 222.2 47.4% 11.2%;
-
-      --secondary: 217.2 32.6% 17.5%;
-      --secondary-foreground: 210 40% 98%;
-
-      --muted: 217.2 32.6% 17.5%;
-      --muted-foreground: 215 20.2% 65.1%;
-
-      --accent: 217.2 32.6% 17.5%;
-      --accent-foreground: 210 40% 98%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 210 40% 98%;
-
-      --border: 217.2 32.6% 17.5%;
-      --input: 217.2 32.6% 17.5%;
-      --ring: 212.7 26.8% 83.9%;
-    }
-  }
+:root {
+  --primary: black;
+  --secondary: white;
+  --accent: #f5f5f5;
+  --text: #111111;
+  --text-secondary: #6b7280;
 }
 
-/* .hero {
-  background-image: url("../assets/images/Union.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
-/* .hero-benefit {
-  background-image: url("../assets/images/Union.png");
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.benefit {
-  background-image: url("../assets/images/pexels.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
-.coin {
-  animation: slideDown 6s infinite;
-  /* visibility: hidden; */
-}
-
-#coin {
-  transition-delay: 1s;
-}
-
-#coins {
-  transition-delay: 0s;
-}
-
-#coinsVertical {
-  transition-delay: 2s;
-}
-
-@keyframes slideDown {
-  from {
-    visibility: visible;
-  }
-
-  to {
-    bottom: -450px;
-    visibility: hidden;
-    width: 20px;
-  }
-
-}
-
-.carousel {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-  transition: transform 0.5s ease-in-out;
-}
-
-.listingImage {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  width: 100%;
-  min-height: 300px;
-  max-height: 300px;
-  position: relative;
-  cursor: pointer;
-  border-radius: 20px;
-}
-
-@media (max-width: 640px) {
-  .carousel {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    overflow-x: scroll;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    border-radius: 20px;
-  }
-  .carousel::-webkit-scrollbar {
-    display: none;
-  }
-  .listingImage {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 100%;
-    position: relative;
-    width: 100%;
-    min-height: 300px;
-    max-height: 300px;
-    cursor: pointer;
-    scroll-snap-align: start;
-  }
-  .listingImage:first-child {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
-  .listingImage:last-child {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }  
-}
-
-
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.shadow-bottom {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 50;
-}
-
-.blinkingCircle {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(160, 236, 160);
-  border-radius: 50%;
-  animation: blink 1s infinite;
-}
-.offers {
-  padding: 30px;
-  background-color: #f9f9f9; /* Optional background for the offers section */
-}
-.offers h1 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.offerCardCon {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px; /* Adds spacing between cards */
-}
-
-.offerCardEach {
-  padding: 20px;
-  background-color: #ffebeb;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.offerCardInner {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better aesthetics */
-  width: 100%;
-  height: 100%;
-}
-
-.offerCardInner h2 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.offerCardInner p {
-  font-size: 14px;
-  color: #333;
-  text-align: center;
-}
-
-
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  @keyframes slideDown {
-    from {
-      visibility: visible;
-      bottom: 0;
-    }
-
-    to {
-      bottom: -180px;
-      visibility: hidden;
-      width: 20px;
-    }
-
-  }
-  .offerCardCon {
-    grid-template-columns: 1fr;
-  }
-
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
 }
 
-input[type=number] {
-  -moz-appearance: textfield;
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text);
+  background: var(--secondary);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Custom container */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Button styles */
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+/* Animation utilities */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Futura", "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+/* Swiper custom styles */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: var(--secondary);
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }

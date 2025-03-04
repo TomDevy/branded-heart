@@ -1,15 +1,17 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Hero from "@/components/home/Hero";
-import About from "@/components/home/About";
 import Offers from "@/components/home/Offers";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
+import CallToAction from "@/components/home/CallToAction";
+import JoinUs from "@/components/home/JoinUs";
 
 export default function Home() {
   return (
-    <div className="app">
+    <div className="app bg-white text-gray-900">
       <Hero />
+      <FeaturedProducts />
       <Offers />
-      <About />
+      <CallToAction />
+      <JoinUs />
     </div>
   );
 }
