@@ -7,7 +7,6 @@ const JoinUs = () => {
 
   const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    // Here you would add your actual newsletter submission logic
     setSubmitted(true);
     setEmail("");
   };
