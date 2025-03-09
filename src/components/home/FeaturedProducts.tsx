@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-// Replace with your actual product images
+
 const products = [
   {
     id: 1,
     name: "Premium Branded Tee",
-    image: "/products/tee1.jpg", // These would be your actual product images
+    image: "/products/tee1.jpg",
     price: "$34.99",
     category: "T-Shirts",
     link: "/products/premium-tee"
@@ -52,7 +52,7 @@ const ProductCard = ({ product }: any) => {
           <div className="aspect-w-1 aspect-h-1 w-full h-full">
             <div className="relative h-full w-full">
               <Image
-                src="/api/placeholder/400/320" // Replace with actual product.image when available
+                src="/api/placeholder/400/320"
                 alt={product.name}
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
