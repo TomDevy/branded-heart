@@ -9,7 +9,7 @@ const products = [
   {
     id: 1,
     name: "Premium Branded Tee",
-    image: "/products/tee1.jpg",
+    image: "/products/voiceBH2.jpg",
     price: "$34.99",
     category: "T-Shirts",
     link: "/products/premium-tee"
@@ -17,7 +17,7 @@ const products = [
   {
     id: 2,
     name: "Custom Logo Tote",
-    image: "/products/tote1.jpg",
+    image: "/products/totebag4.jpg",
     price: "$29.99",
     category: "Bags",
     link: "/products/logo-tote"
@@ -25,7 +25,7 @@ const products = [
   {
     id: 3,
     name: "Signature Hoodie",
-    image: "/products/hoodie1.jpg",
+    image: "/products/hoodie.jpg",
     price: "$59.99",
     category: "Hoodies",
     link: "/products/signature-hoodie"
@@ -33,7 +33,7 @@ const products = [
   {
     id: 4,
     name: "Embroidered Cap",
-    image: "/products/cap1.jpg",
+    image: "/products/caps.jpg",
     price: "$24.99",
     category: "Headwear",
     link: "/products/embroidered-cap"
@@ -52,7 +52,7 @@ const ProductCard = ({ product }: any) => {
           <div className="aspect-w-1 aspect-h-1 w-full h-full">
             <div className="relative h-full w-full">
               <Image
-                src="/api/placeholder/400/320"
+                src={product.image}
                 alt={product.name}
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-500"

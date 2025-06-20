@@ -5,8 +5,8 @@ import { motion, useInView, useAnimation } from "framer-motion";
 const offersData = [
   {
     title: "Premium Quality",
-    icon: "/icons/quality.svg", // You'll need to create or download these SVG icons
-    description: "Superior materials and craftsmanship in every product we create.",
+    icon: "/icons/quality.svg",
+     description: "Superior materials and craftsmanship in every product we create.",
   },
   {
     title: "Custom Design",
