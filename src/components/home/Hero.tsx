@@ -44,7 +44,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full pt-10">
       <Swiper
         spaceBetween={0}
         autoplay={{ delay: 5000 }}
