@@ -1,7 +1,7 @@
 import {
     ABOUT,
     HOME,
-    CONTACT
+    CONTACT,
   } from "./path";
   
   export const links = [

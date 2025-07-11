@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import { links } from "@/constants/data";
 import Link from "next/link";
 import { HOME } from "@/constants/path";
+import { ABOUT } from "@/constants/path";
 import { usePathname } from "next/navigation";
 
 import logo from "@/assets/logo.png"; 
