@@ -43,8 +43,8 @@ const products = [
 const ProductCard = ({ product }: any) => {
   return (
     <motion.div 
-      whileHover={{ y: -10 }}
-      transition={{ duration: 0.3 }}
+      // whileHover={{ y: -10 }}
+      // transition={{ duration: 0.3 }}
       className="group cursor-pointer"
     >
       <Link href={product.link}>
@@ -59,7 +59,7 @@ const ProductCard = ({ product }: any) => {
               />
             </div>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 p-4 flex justify-center opacity-0 group-hover:opacity-100">
+          <div className="absolute bottom-0 left-0 right-0 bg-primaryRed bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 p-4 flex justify-center opacity-0 group-hover:opacity-100">
             <span className="text-white font-medium">View Product</span>
           </div>
         </div>

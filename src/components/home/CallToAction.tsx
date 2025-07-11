@@ -1,6 +1,6 @@
 const CallToAction = () => {
     return (
-      <section className="relative h-96 w-full bg-black">
+      <section className="relative h-96 w-full bg-primaryRed">
         <div 
           className="absolute inset-0 bg-cover bg-center" 
           style={{ 

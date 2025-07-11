@@ -11,22 +11,22 @@ import {
 const offersData = [
   {
     title: "Premium Quality",
-    icon: <BadgeCheck size={64} className="text-black" />,   
+    icon: <BadgeCheck size={64} className="text-black"color="#be0505" />,   
      description: "Superior materials and craftsmanship in every product we create.",
   },
   {
     title: "Custom Design",
-    icon: <PencilRuler size={64} className="text-black" />,
+    icon: <PencilRuler size={64} className="text-black" color="#be0505"/>,
     description: "Tailored solutions that perfectly match your brand identity.",
   },
   {
     title: "Fast Production",
-    icon: <Timer size={64} className="text-black" />,
+    icon: <Timer size={64} className="text-black" color="#be0505"/>,
     description: "Quick turnaround times without compromising on quality.",
   },
   {
     title: "Sustainable Practices",
-    icon: <Leaf size={64} className="text-black" />,
+    icon: <Leaf size={64} className="text-black" color="#be0505"/>,
     description: "Environmentally conscious materials and production methods.",
   },
 ];

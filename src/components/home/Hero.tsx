@@ -75,7 +75,7 @@ const Hero = () => {
                     {slide.subtitle}
                   </p>
                   <Link href={slide.link}>
-                    <span className="bg-white text-black py-3 px-8 font-bold hover:bg-gray-200 transition-colors duration-300 inline-block">
+                    <span className="bg-primaryRed text-white py-3 px-8 font-bold hover:bg-gray-200 transition-colors duration-300 inline-block">
                       {slide.cta}
                     </span>
                   </Link>

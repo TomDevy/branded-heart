@@ -56,7 +56,7 @@ const Header = () => {
                 key={label}
                 href={route}
                 className={`font-medium text-sm tracking-wide hover:text-gray-600 transition-colors ${
-                  isActive(route) ? "text-black font-bold" : "text-gray-500"
+                  isActive(route) ? "text-primaryRed font-bold" : "text-gray-500"
                 }`}
               >
                 {label.toUpperCase()}
