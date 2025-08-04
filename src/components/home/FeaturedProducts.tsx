@@ -1,53 +1,15 @@
 "use client";
+
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-
-
-const products = [
-  {
-    id: 1,
-    name: "Premium Branded Tee",
-    image: "/products/voiceBH2.jpg",
-    price: "$34.99",
-    category: "T-Shirts",
-    link: "/products/premium-tee"
-  },
-  {
-    id: 2,
-    name: "Custom Logo Tote",
-    image: "/products/totebag4.jpg",
-    price: "$29.99",
-    category: "Bags",
-    link: "/products/logo-tote"
-  },
-  {
-    id: 3,
-    name: "Signature Hoodie",
-    image: "/products/hoodie.jpg",
-    price: "$59.99",
-    category: "Hoodies",
-    link: "/products/signature-hoodie"
-  },
-  {
-    id: 4,
-    name: "Embroidered Cap",
-    image: "/products/caps.jpg",
-    price: "$24.99",
-    category: "Headwear",
-    link: "/products/embroidered-cap"
-  }
-];
+import { products } from "@/app/lib/products"; // Adjust if path is different
 
 const ProductCard = ({ product }: any) => {
   return (
-    <motion.div 
-      // whileHover={{ y: -10 }}
-      // transition={{ duration: 0.3 }}
-      className="group cursor-pointer"
-    >
-      <Link href={product.link}>
+    <motion.div className="group cursor-pointer">
+      <Link href={`/products/${product.slug}`}>
         <div className="relative h-80 w-full mb-4 overflow-hidden bg-gray-100">
           <div className="aspect-w-1 aspect-h-1 w-full h-full">
             <div className="relative h-full w-full">
@@ -75,6 +37,7 @@ const ProductCard = ({ product }: any) => {
 
 const FeaturedProducts = () => {
   const containerRef = useRef(null);
+  const featured = products.slice(0, 4); // Only first 4
 
   return (
     <section className="py-16 bg-white">
@@ -88,8 +51,11 @@ const FeaturedProducts = () => {
           </Link>
         </div>
 
-        <div ref={containerRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.map((product) => (
+        <div
+          ref={containerRef}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          {featured.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

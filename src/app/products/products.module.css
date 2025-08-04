@@ -1,0 +1,94 @@
+.productsMain {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 320px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+.productImage {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .productImage {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(209, 46, 46, 0);
+  padding: 16px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.card:hover .overlay {
+  background-color: rgba(209, 46, 46, 0.5);
+  opacity: 1;
+}
+
+.overlayText {
+  color: #fff;
+  font-weight: 500;
+}
+
+.details {
+  margin-top: 12px;
+}
+
+.category {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.price {
+  font-weight: 500;
+  margin-top: 4px;
+}
+

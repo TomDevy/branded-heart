@@ -171,8 +171,8 @@ const Footer = () => {
             <address className="not-italic text-gray-300">
               <p>12 Branded Heart Place</p>
               <p>FUTA South Gate, Akure, Ondo State, Nigeria.</p>
-              <p className="mt-4">info@brandco.com</p>
-              <p>08106622256</p>
+              <p className="mt-4">brandedheart13@gmail.com</p>
+              <p>+234 706 193 4336</p>
             </address>
           </div>
         </div>
