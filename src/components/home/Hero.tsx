@@ -25,21 +25,21 @@ const Hero = () => {
       title: "CRAFTED FOR DISTINCTION",
       subtitle: "Innovative Designs That Stand Out",
       cta: "Shop Now",
-      link: "/shop"
+      link: "/products"
     },
     {
       src: hero2,
       title: "QUALITY REDEFINED",
       subtitle: "Handcrafted Custom Products",
       cta: "Discover More",
-      link: "/about"
+      link: "/products"
     },
     {
       src: hero3,
       title: "CARRY YOUR STATEMENT",
       subtitle: "Signature Tote Collection",
       cta: "View Products",
-      link: "/totes"
+      link: "/products"
     }
   ];
 

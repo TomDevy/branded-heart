@@ -23,7 +23,7 @@ const CallToAction = () => {
               Get a Quote
             </a>
             <a 
-              href="/portfolio" 
+              href="/products" 
               className="px-8 py-3 border border-white text-white font-bold hover:bg-white hover:bg-opacity-10 transition-colors"
             >
               See Our Work

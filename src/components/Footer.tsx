@@ -81,7 +81,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="/products"
                   className="text-gray-300 hover:text-primaryRed transition-colors"
                 >
                   T-Shirts
@@ -89,7 +89,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/products"
                   className="text-gray-300 hover:text-primaryRed transition-colors"
                 >
                   Hoodies
@@ -97,7 +97,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/products"
                   className="text-gray-300 hover:text-primaryRed transition-colors"
                 >
                   Bags & Totes
@@ -105,7 +105,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/products"
                   className="text-gray-300 hover:text-primaryRed transition-colors"
                 >
                   Caps & Headwear
@@ -113,7 +113,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/products"
                   className="text-gray-300 hover:text-primaryRed transition-colors"
                 >
                   Custom Apparel
@@ -126,7 +126,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="/contact"
                   className="text-gray-300 hover:text-primaryRed transition-colors"
                 >
                   Contact Us
@@ -134,36 +134,36 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/faqs"
                   className="text-gray-300 hover:text-primaryRed transition-colors"
                 >
                   FAQs
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   className="text-gray-300 hover:text-primaryRed transition-colors"
                 >
                   Shipping & Returns
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a
                   href="#"
                   className="text-gray-300 hover:text-primaryRed transition-colors"
                 >
                   Size Guide
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a
                   href="#"
                   className="text-gray-300 hover:text-primaryRed transition-colors"
                 >
                   Privacy Policy
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>

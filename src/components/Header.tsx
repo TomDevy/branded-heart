@@ -15,7 +15,14 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
-  const isActive = (href: string) => pathname === href;
+  const isActive = (href: string) => {
+  if (!pathname) return false;
+
+  const cleanPath = pathname.split("?")[0].replace(/\/$/, "");
+  const cleanHref = href.replace(/\/$/, "");
+  return cleanPath === cleanHref;
+};
+
 
   useEffect(() => {
     const handleScroll = () => {
