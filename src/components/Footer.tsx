@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">ABOUT US</h3>
             <p className="text-gray-300 mb-4">
-              We create premium branding solutions for businesses that want to
+              We create premium branding solutions for businesses and individuals that want to
               stand out. Quality materials, innovative designs, and sustainable
               practices.
             </p>
