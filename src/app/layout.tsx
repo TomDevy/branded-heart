@@ -23,10 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${sora.className} mx-auto max-w-[1440px]`}>
-        <Header /> {/* Added here */}
-        <main>{children}</main>
-        <Footer /> {/* Added here */}
+        <div className="min-h-screen flex flex-col">
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
 }
+

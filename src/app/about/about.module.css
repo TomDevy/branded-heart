@@ -1,0 +1,94 @@
+.aboutMain {
+  padding: 120px 20px 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #222;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.section,
+.sectionAlt {
+  padding: 40px 30px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.section:hover,
+.sectionAlt:hover {
+  transform: translateY(-4px);
+}
+
+.sectionAlt {
+  background-color: #f9f9f9;
+}
+
+.iconTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.icon {
+  font-size: 1.6rem;
+  color: #d12e2e;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.section p,
+.section ul {
+  font-size: 1rem;
+  color: #444;
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 60px;
+  background-color: #fdf2f2;
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.ctaBtn {
+  background-color: #d12e2e;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #a72424;
+}

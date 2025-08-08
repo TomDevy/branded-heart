@@ -1,6 +1,6 @@
 const CallToAction = () => {
     return (
-      <section className="relative h-96 w-full bg-black">
+      <section className="relative h-96 w-full bg-primaryRed">
         <div 
           className="absolute inset-0 bg-cover bg-center" 
           style={{ 
@@ -23,7 +23,7 @@ const CallToAction = () => {
               Get a Quote
             </a>
             <a 
-              href="/portfolio" 
+              href="/products" 
               className="px-8 py-3 border border-white text-white font-bold hover:bg-white hover:bg-opacity-10 transition-colors"
             >
               See Our Work

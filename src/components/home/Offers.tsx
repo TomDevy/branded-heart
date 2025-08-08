@@ -1,26 +1,32 @@
 "use client";
 import { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import {
+  BadgeCheck,
+  PencilRuler,
+  Timer,
+  Leaf,
+} from "lucide-react";
 
 const offersData = [
   {
     title: "Premium Quality",
-    icon: "/icons/quality.svg",
+    icon: <BadgeCheck size={64} className="text-black"color="#be0505" />,   
      description: "Superior materials and craftsmanship in every product we create.",
   },
   {
     title: "Custom Design",
-    icon: "/icons/design.svg",
+    icon: <PencilRuler size={64} className="text-black" color="#be0505"/>,
     description: "Tailored solutions that perfectly match your brand identity.",
   },
   {
     title: "Fast Production",
-    icon: "/icons/speed.svg",
+    icon: <Timer size={64} className="text-black" color="#be0505"/>,
     description: "Quick turnaround times without compromising on quality.",
   },
   {
     title: "Sustainable Practices",
-    icon: "/icons/sustainable.svg",
+    icon: <Leaf size={64} className="text-black" color="#be0505"/>,
     description: "Environmentally conscious materials and production methods.",
   },
 ];
@@ -78,9 +84,7 @@ const Offers = () => {
               variants={itemVariants}
               className="bg-white p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-300"
             >
-              <div className="mb-6">
-                <img src={offer.icon} alt={offer.title} className="w-16 h-16" />
-              </div>
+              <div className="mb-6">{offer.icon}</div>
               <h3 className="text-xl font-bold mb-4">{offer.title}</h3>
               <p className="text-gray-600">{offer.description}</p>
             </motion.div>

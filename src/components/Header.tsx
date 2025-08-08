@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import { links } from "@/constants/data";
 import Link from "next/link";
 import { HOME } from "@/constants/path";
+import { ABOUT } from "@/constants/path";
 import { usePathname } from "next/navigation";
 
 import logo from "@/assets/logo.png"; 
@@ -14,7 +15,14 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
-  const isActive = (href: string) => pathname === href;
+  const isActive = (href: string) => {
+  if (!pathname) return false;
+
+  const cleanPath = pathname.split("?")[0].replace(/\/$/, "");
+  const cleanHref = href.replace(/\/$/, "");
+  return cleanPath === cleanHref;
+};
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,7 +64,7 @@ const Header = () => {
                 key={label}
                 href={route}
                 className={`font-medium text-sm tracking-wide hover:text-gray-600 transition-colors ${
-                  isActive(route) ? "text-black font-bold" : "text-gray-500"
+                  isActive(route) ? "text-primaryRed font-bold" : "text-gray-500"
                 }`}
               >
                 {label.toUpperCase()}

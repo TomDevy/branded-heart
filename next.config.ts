@@ -1,7 +1,6 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  // Just omit 'turbo' entirely to use Webpack
+  // No experimental.turbo field
 };
 
 export default nextConfig;
