@@ -3,7 +3,6 @@ import React from "react";
 
 
 const Footer = () => {
-  const year = new Date().getFullYear();
 
   return (
     <footer className="bg-black text-white py-16">
