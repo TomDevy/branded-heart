@@ -119,6 +119,61 @@
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+/* Modal option buttons container */
+.modalOptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap; /* Keeps it responsive on small screens */
+}
+
+/* Each option button (Call / WhatsApp) */
+.optionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.optionBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Specific colors for each */
+.callBtn {
+  background: #28a745;
+  color: #fff;
+}
+
+.whatsappBtn {
+  background: #25D366;
+  color: #fff;
+}
+
+/* Cancel button in modal */
+.cancelBtn {
+  margin-top: 1rem;
+  background: #ccc;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.cancelBtn:hover {
+  background: #bbb;
+}
 
 .modal h3 {
   margin-top: 12px;
