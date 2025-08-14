@@ -109,8 +109,10 @@
 
 /* Modal box */
 .modal {
+  position: relative;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   background: #fff;
@@ -127,35 +129,59 @@
   gap: 1rem;
   margin-top: 1rem;
   flex-wrap: wrap; /* Keeps it responsive on small screens */
+  width: 100%; /* Ensure full width usage */
 }
 
-/* Each option button (Call / WhatsApp) */
 .optionBtn {
+  flex: 1 1 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  min-height: 44px;
+  min-width: 120px; /* Add minimum width */
+  max-width: 150px; /* Add maximum width for consistency */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.optionBtn svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
 .optionBtn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* Specific colors for each */
 .callBtn {
-  background: #28a745;
-  color: #fff;
+  background: #d8ffe1;
+  color: black;
 }
 
 .whatsappBtn {
   background: #25D366;
   color: #fff;
+}
+.closeIcon {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.closeIcon:hover {
+  color: #000;
 }
 
 /* Cancel button in modal */

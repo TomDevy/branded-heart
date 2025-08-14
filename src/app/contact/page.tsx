@@ -8,6 +8,7 @@ import {
   Send,
   CheckCircle,
   MessageCircle,
+  X,
 } from "lucide-react";
 
 const Contact = () => {
@@ -170,35 +171,38 @@ const Contact = () => {
       )}
 
       {/* Call / WhatsApp Option Modal */}
-      {showCallOptions && (
-        <div className={style.modalOverlay}>
-          <div className={style.modal}>
-            <h3>Contact via</h3>
-            <div className={style.modalOptions}>
-              <a
-                href={`tel:${phoneNumber}`}
-                className={`${style.optionBtn} ${style.callBtn}`}
-              >
-                📞 Call
-              </a>
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${style.optionBtn} ${style.whatsappBtn}`}
-              >
-                <MessageCircle size={18} /> WhatsApp
-              </a>
-            </div>
-            <button
-              onClick={() => setShowCallOptions(false)}
-              className={style.cancelBtn}
-            >
-              Cancel
-            </button>
-          </div>
-        </div>
-      )}
+     {showCallOptions && (
+  <div className={style.modalOverlay}>
+    <div className={style.modal}>
+      {/* Close icon */}
+      <button
+        onClick={() => setShowCallOptions(false)}
+        className={style.closeIcon}
+        aria-label="Close"
+      >
+        <X size={20} />
+      </button>
+
+      <h3>Contact us via</h3>
+      <div className={style.modalOptions}>
+        <a
+          href={`tel:${phoneNumber}`}
+          className={`${style.optionBtn} ${style.callBtn}`}
+        >
+          📞 Call
+        </a>
+        <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${style.optionBtn} ${style.whatsappBtn}`}
+        >
+          <MessageCircle size={18} /> WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+)}
     </div>
   );
 };
