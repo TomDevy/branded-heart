@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import style from "./contact.module.css";
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +12,9 @@ const Contact = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showModal, setShowModal] = useState(false);
+
+  // NEW: Modal for choosing call or WhatsApp
+  const [showCallOptions, setShowCallOptions] = useState(false);
 
   const isFormValid =
     formData.name.trim() !== "" &&
@@ -30,9 +33,7 @@ const Contact = () => {
     try {
       const response = await fetch("https://formspree.io/f/xqalyyen", {
         method: "POST",
-        headers: {
-          Accept: "application/json",
-        },
+        headers: { Accept: "application/json" },
         body: new FormData(e.target as HTMLFormElement),
       });
 
@@ -48,6 +49,9 @@ const Contact = () => {
       setIsSubmitting(false);
     }
   };
+
+  const phoneNumber = "+2347061934336";
+  const whatsappLink = "https://wa.me/2347061934336";
 
   return (
     <div className={style.contactMain}>
@@ -111,7 +115,16 @@ const Contact = () => {
         <div className={style.infoBox}>
           <h2>Contact Details</h2>
           <p><Mail size={18} /> brandedheart13@gmail.com</p>
-          <p><Phone size={18} /> +234 706 193 4336</p>
+
+          {/* Updated Phone click */}
+          <p
+            className={style.clickablePhone}
+            onClick={() => setShowCallOptions(true)}
+            style={{ cursor: "pointer" }}
+          >
+            <Phone size={18} /> +234 706 193 4336
+          </p>
+
           <p><MapPin size={18} /> Akure, Nigeria</p>
         </div>
       </div>
@@ -125,6 +138,40 @@ const Contact = () => {
             <p>We've received your message, and will get back to you soonest!</p>
             <button onClick={() => setShowModal(false)} className={style.closeBtn}>
               Close
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Call / WhatsApp Option Modal */}
+      {showCallOptions && (
+        <div className={style.modalOverlay}>
+          <div className={style.modal}>
+            <h3>Contact via</h3>
+            <div style={{ display: "flex", gap: "1rem", marginTop: "1rem" }}>
+              <a
+                href={`tel:${phoneNumber}`}
+                className={style.optionBtn}
+                style={{ background: "#28a745", color: "#fff", padding: "0.5rem 1rem", borderRadius: "5px" }}
+              >
+                📞 Call
+              </a>
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={style.optionBtn}
+                style={{ background: "#25D366", color: "#fff", padding: "0.5rem 1rem", borderRadius: "5px" }}
+              >
+                <MessageCircle size={18} /> WhatsApp
+              </a>
+            </div>
+            <button
+              onClick={() => setShowCallOptions(false)}
+              className={style.closeBtn}
+              style={{ marginTop: "1rem" }}
+            >
+              Cancel
             </button>
           </div>
         </div>
