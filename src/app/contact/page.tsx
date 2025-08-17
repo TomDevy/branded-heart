@@ -21,7 +21,7 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-  // NEW: Modal for choosing call or WhatsApp
+  //Modal for choosing call or WhatsApp
   const [showCallOptions, setShowCallOptions] = useState(false);
 
   const isFormValid =
