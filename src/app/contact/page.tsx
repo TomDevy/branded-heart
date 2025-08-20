@@ -174,7 +174,6 @@ const Contact = () => {
      {showCallOptions && (
   <div className={style.modalOverlay}>
     <div className={style.modal}>
-      {/* Close icon */}
       <button
         onClick={() => setShowCallOptions(false)}
         className={style.closeIcon}

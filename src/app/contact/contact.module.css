@@ -145,8 +145,8 @@
   line-height: 1;
   white-space: nowrap;
   min-height: 44px;
-  min-width: 120px; /* Add minimum width */
-  max-width: 150px; /* Add maximum width for consistency */
+  min-width: 120px;
+  max-width: 150px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
