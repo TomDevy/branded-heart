@@ -21,10 +21,6 @@ const faqData = [
     question: "Do you ship nationwide?",
     answer: "Yes, we deliver to all states in Nigeria. Delivery fees vary based on location.",
   },
-//   {
-//     question: "How do I make payments?",
-//     answer: "Payments are made securely online through our platform or via direct bank transfer after order confirmation.",
-//   }
 ];
 
 const FaqItem = ({ question, answer, index, activeIndex, toggle }: any) => {
