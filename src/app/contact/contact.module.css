@@ -125,7 +125,7 @@
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
-  flex-wrap: wrap; /* Keeps it responsive on small screens */
+  flex-wrap: wrap; 
   width: 100%; /* Ensure full width usage */
 }
 
