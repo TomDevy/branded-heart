@@ -126,7 +126,7 @@
   gap: 1rem;
   margin-top: 1rem;
   flex-wrap: wrap; 
-  width: 100%; /* Ensure full width usage */
+  width: 100%;
 }
 
 .optionBtn {
